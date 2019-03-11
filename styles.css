@@ -1,8 +1,8 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
@@ -57,7 +57,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/mossy-tree.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -70,11 +70,11 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 5px solid white;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(360deg);
 }
 .tag {
   background-color: #efefef;
@@ -83,10 +83,10 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+}
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: #1D2220;
+  color: #efefef;
 }
 .card {
   margin: 30px;
@@ -94,12 +94,40 @@ header .profile-image:hover {
   max-width: 500px;
   text-align: left;
   background: #fff;
-  border-bottom: 4px solid #ccc;
+  border-bottom: 4px solid #6F8273;
   border-radius: 6px;
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #ADBD9E;
+}
+
+.background-header {
+  background: url('images/background.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.goals-header {
+  background: url('images/goals.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+h2.background-header, h2.goals-header {
+  text-align: center;
+  color: white;
+  padding: 150px;
+  background-color: black;
+}
+
+h2.background-header {
+  text-align: center;
+  color: #efefef;
+  padding: 150px;
+  background-color: black;
 }
 
 ul.skills {
@@ -110,14 +138,14 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #ADBD9E;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #313F21;
 }
 
 footer {
@@ -169,10 +197,10 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
+      display: flex;
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -204,4 +232,3 @@ a.social:hover {
   }
 
 }
-
